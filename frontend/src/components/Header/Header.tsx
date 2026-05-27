@@ -7,7 +7,7 @@ export default function Header() {
     <header className={s.header}>
       <div className={`container ${s.content}`}>
         <Link to="/" className={s.logo}>
-          ⚡ Quiz Builder
+          📝 Quiz Builder
         </Link>
         <nav className={s.nav}>
           <Link to="/">All quizes</Link>
