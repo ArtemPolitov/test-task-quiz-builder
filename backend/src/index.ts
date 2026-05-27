@@ -2,7 +2,8 @@ import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import prisma from './db';
-// import errorHandler from './middleware/errorMiddleware'; 
+import quizRoutes from './routes/quizRoutes';
+import errorHandler from './middleware/errorMiddleware'; 
 
 dotenv.config();
 
@@ -11,14 +12,11 @@ const PORT = Number(process.env.PORT) || 3000;
 // Middlewares
 app.use(cors());
 app.use(express.json()); 
-
-app.get('/ping', (req: Request, res: Response) => {
-  res.json({ message: 'test' });
-});
+app.use('/api/quizzes', quizRoutes);
 
 // app.use('/api/quizzes', quizRoutes);
 
-// app.use(errorHandler);
+app.use(errorHandler);
 
 const startServer = async () => {
   try {
