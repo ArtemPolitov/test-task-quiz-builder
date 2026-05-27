@@ -29,9 +29,6 @@ export default function QuizList() {
     <div className={`container ${s.dashboard}`}>
       <div className={s.topBar}>
         <h1 className={s.title}>Quizzes</h1>
-        <Link to="/create" className="btn btnPrimary">
-          + Add quiz
-        </Link>
       </div>
 
       {quizzes && quizzes.length === 0 ? (

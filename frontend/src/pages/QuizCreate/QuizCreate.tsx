@@ -90,7 +90,6 @@ export default function QuizCreate() {
           {fields.map((field, index) => (
             <QuestionFormCard
               key={field.id}
-              fieldId={field.id}
               index={index}
               register={register}
               errors={errors}
@@ -105,7 +104,7 @@ export default function QuizCreate() {
           <button type="submit" className="btn btnPrimary" disabled={isPending}>
             {isPending ? 'Saving...' : 'Save Quiz'}
           </button>
-          <Link to="/" className="btn btnSecondary">
+          <Link to="/" className={`btn ${s.backBtn}`}>
             Cancel
           </Link>
         </div>

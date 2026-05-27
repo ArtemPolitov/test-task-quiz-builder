@@ -11,7 +11,7 @@ export default function Header() {
         </Link>
         <nav className={s.nav}>
           <Link to="/">All quizes</Link>
-          <Link to="/create" className="btn btnPrimary">
+          <Link to="/create" className="btn btnPrimary" style={{ color: '#fff' }}>
             + Create quiz
           </Link>
         </nav>

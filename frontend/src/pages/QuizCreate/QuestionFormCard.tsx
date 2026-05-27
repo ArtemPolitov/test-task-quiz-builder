@@ -4,7 +4,6 @@ import type { QuizFormInputs } from './types';
 
 interface QuestionFormCardProps {
   index: number;
-  fieldId: string;
   register: UseFormRegister<QuizFormInputs>;
   errors: FieldErrors<QuizFormInputs>;
   currentType: 'BOOLEAN' | 'INPUT' | 'CHECKBOX' | undefined;
@@ -14,7 +13,6 @@ interface QuestionFormCardProps {
 
 export default function QuestionFormCard({
   index,
-  fieldId,
   register,
   errors,
   currentType,

@@ -25,6 +25,7 @@ body {
 }
 
 .btn {
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +35,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  
+  color: var(--text-main);
   &Primary {
     background-color: var(--color-primary);
     color: white;
