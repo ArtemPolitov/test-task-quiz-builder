@@ -2,9 +2,9 @@ import { Router } from 'express';
 import { createQuiz, getAllQuizzes, getQuizById, deleteQuiz } from '../controllers/quizController';
 import { validate } from '../middleware/validateMiddleware';
 import { 
-  createQuizSchema, 
-  getQuizByIdSchema, 
-  deleteQuizSchema 
+  createQuizSchema,
+  getQuizByIdSchema,
+  deleteQuizSchema
 } from '../validation/quizValidation';
 
 const router = Router();
